@@ -29,8 +29,9 @@ alias opdf='chromium --new-window '
 
 alias copy='copy_func() { cat "$1" | wl-copy; }; copy_func'
 
-alias nports='sudo iptables -t nat -L -v -n --line-numbers'
-alias ports='sudo iptables -L -v -n --line-numbers'
+alias nfw='sudo iptables -t nat -L -v -n --line-numbers'
+alias fw='sudo iptables -L -v -n --line-numbers'
+alias ports='sudo netstat -tulpn'
 alias nano='nvim'
 alias bcrl='source ~/.bashrc'
 
